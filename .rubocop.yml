@@ -1,6 +1,6 @@
 # This is the configuration used to check the rubocop source code.
 
-inherit_from: .rubocop_todo.yml
+# inherit_from: .rubocop_todo.yml
 
 AllCops:
   Exclude:
@@ -20,4 +20,13 @@ Metrics/ModuleLength:
     - 'spec/**/*.rb'
 
 Bundler/OrderedGems:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 130
+
+Style/BlockComments:
+  Enabled: false
+
+Style/Documentation:
   Enabled: false
